@@ -1,0 +1,143 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+:root {
+  --bg-colour: #ffffff;
+  --accent-colour: #c9a227;
+  --accent-colour2: #e0bc50;
+  --primary-text-colour: #0e1f40;
+  --font-logo: "Libre Baskerville", serif;
+  --font: "Montserrat", sans-serif;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.navbar nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bg-colour);
+  padding: 0 30px;
+  align-items: center;
+  height: 80px;
+}
+
+.navlogo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 10px;
+}
+
+.navlogo img {
+  height: 80px;
+  width: auto;
+}
+
+.navlogo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.navlogo h1 {
+  font-family: var(--font-logo);
+  margin: 0;
+  font-size: 20px;
+}
+
+.navlogo h2 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--accent-colour);
+  font-family: var(--font);
+}
+
+.navlinks ul {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+/* Animations for links */
+.navlinks > * {
+  animation: riseIn 1s cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
+  animation-delay: calc(var(--i, 0) * 90ms);
+}
+
+.navlinks a {
+  pointer-events: auto;
+  font-family: var(--font);
+  position: relative;
+  background: none;
+  border: 0;
+  padding: 0;
+  text-transform: inherit;
+  color: inherit;
+  cursor: pointer;
+  transition:
+    opacity 0.35s ease,
+    letter-spacing 0.35s ease;
+}
+
+.navlinks a {
+  color: var(--primary-text-colour);
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.navlinks a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  width: 100%;
+  height: 2px;
+  background: var(--accent-colour);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.navbar a:hover,
+.navbar a:focus-visible {
+  opacity: 1;
+  outline: none;
+}
+
+.navbar a:hover::after,
+.navbar a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+/* Styling for Quote Button */
+
+.quote-btn {
+  background-color: var(--accent-colour);
+  text-transform: uppercase;
+  color: #000;
+  border: none;
+  padding: 18px 36px;
+  font-family: var(--font);
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quote-btn:hover {
+  background-color: var(--accent-colour2);
+}
