@@ -1,0 +1,10 @@
+body{
+  margin:0px;
+}
+
+.heroBackground {
+  background-image: url('../assets/backgroundHero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
