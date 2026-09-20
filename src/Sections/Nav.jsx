@@ -1,7 +1,11 @@
+import { useState } from 'react';
 import './nav.css';
 import logo from '../assets/BromleyElite.png';
 
 function Nav() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <div className="navbar">
       <nav>
@@ -12,17 +16,28 @@ function Nav() {
             <h2>Carpet & Flooring</h2>
           </div>
         </div>
+
+        <button
+          className={`hamburger ${menuOpen ? 'open' : ''}`}
+          onClick={() => setMenuOpen((open) => !open)}
+          aria-label="Toggle navigation menu"
+          aria-expanded={menuOpen}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
         <div className="navlinks">
-          <ul>
-            <li><a href="/#hero">Home</a></li>
-            <li><a href="/#about">About</a></li>
-            <li><a href="/#menu">Flooring</a></li>
-            <li><a href="/#menu">Our Work</a></li>
-            <li><a href="/#menu">Reviews</a></li>
-            <li><a href="/#contact">Contact</a></li>
-            <li><button className="quote-btn">Get a free quote</button></li>
+          <ul className={menuOpen ? 'open' : ''}>
+            <li><a href="/#hero" onClick={closeMenu}>Home</a></li>
+            <li><a href="/#about" onClick={closeMenu}>About</a></li>
+            <li><a href="/#menu" onClick={closeMenu}>Flooring</a></li>
+            <li><a href="/#menu" onClick={closeMenu}>Our Work</a></li>
+            <li><a href="/#menu" onClick={closeMenu}>Reviews</a></li>
+            <li><a href="/#contact" onClick={closeMenu}>Contact</a></li>
+            <li><button className="quote-btn" onClick={closeMenu}>Get a free quote</button></li>
           </ul>
-          
         </div>
       </nav>
     </div>
