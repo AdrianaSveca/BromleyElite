@@ -7,7 +7,7 @@
   --primary-text-colour: #0e1f40;
   --font-logo: "Libre Baskerville", serif;
   --font: "Montserrat", sans-serif;
-  --navbar-height: clamp(64px, 1.3vw + 59px, 80px);
+  --navbar-height: clamp(64px, 1.3vw + 60px, 80px);
 }
 
 html {
