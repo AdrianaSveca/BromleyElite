@@ -1,21 +1,56 @@
+@import "./global.css";
+
 body {
   margin: 0px;
 }
 
 .heroBackground {
-  background-image: linear-gradient(to bottom right,rgba(7, 28, 59, 0.86), rgba(12, 45, 96, 0.239)), url('../assets/backgroundHero.jpg');
+  background-image:
+    linear-gradient(
+      to bottom right,
+      rgba(0, 27, 67, 0.93),
+      rgba(12, 46, 96, 0.393)
+    ),
+    url("../assets/backgroundHero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
   min-height: 90vh;
-  position: relative;
-  
+
+  display: flex;
+  align-items: flex-start;
 }
-.heroLogo{
-  position: absolute;
-  top: 50px;
-  left: 360px;  
+.heroLogo {
 }
-.heroLogo img{
-  width: 600px;
+.heroContent{
+  width:min(1200px, 90%);
+  margin: 0 auto;
+}
+.heroLogo img {
+  width: 500px;
+}
+.heroInformation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 500px;
+  gap: 20px;
+}
+.heroTitle {
+  margin: 0;
+  color: white;
+  font-size: 50px;
+}
+.heroTitle span {
+  color: var(--primary);
+}
+
+.heroParagraph {
+  margin: 0;
+    color: rgba(233, 233, 233, 0.903);
+    font-size: 20px;
+}
+.heroLinks {
+  display:flex;
+  gap:15px;
 }
