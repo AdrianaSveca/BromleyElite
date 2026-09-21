@@ -1,6 +1,8 @@
 import { useState } from 'react'
 
 import Nav from "./Sections/Nav.jsx";
+import OurWork from "./Sections/Flooring.jsx";
+
 import './App.css'
 
 function App() {
@@ -9,6 +11,7 @@ function App() {
   return (
     <>
       <Nav/>
+      <OurWork/>
     </>
   )
 }

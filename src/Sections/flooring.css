@@ -1,0 +1,24 @@
+.flooring {
+  background-color: #efe2cf;
+  padding: 50px;
+}
+.flooringHeading {
+  text-align: center;
+  font-family:
+    DM Serif Display,
+    serif;
+  font-size: 15px;
+  color: #c4623a;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding-top: 20px;
+}
+.flooringSubHeading {
+  text-align: center;
+  font-family:
+    DM Serif Display,
+    serif;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
