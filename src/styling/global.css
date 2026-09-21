@@ -1,7 +1,7 @@
 :root {
   --primary: #E9A916;
   --primary-light: #F5C84C;
-  --background: #071D3D;
+  --background: rgb(7, 28, 59);
   --background-light: #0D2B55;
   --text: #F4F2EC;
   --text-muted: #C8C8C8;

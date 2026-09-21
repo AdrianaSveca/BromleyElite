@@ -1,10 +1,21 @@
-body{
-  margin:0px;
+body {
+  margin: 0px;
 }
 
 .heroBackground {
-  background-image: url('../assets/backgroundHero.jpg');
+  background-image: linear-gradient(to bottom right,rgba(7, 28, 59, 0.86), rgba(12, 45, 96, 0.239)), url('../assets/backgroundHero.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  background-position: center bottom;
+  min-height: 90vh;
+  position: relative;
+  
+}
+.heroLogo{
+  position: absolute;
+  top: 50px;
+  left: 360px;  
+}
+.heroLogo img{
+  width: 600px;
 }
