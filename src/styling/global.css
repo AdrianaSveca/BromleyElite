@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap");
+
+
+:root {
+  --primary: #E9A916;
+  --primary-light: #F5C84C;
+  --background: rgb(7, 28, 59);
+  --background-light: #0D2B55;
+  --text: #F4F2EC;
+  --text-muted: #C8C8C8;
+
+  --font: "DM Sans", sans-serif;
+}
