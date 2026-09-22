@@ -1,14 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-
-:root {
-  --bg-colour: #ffffff;
-  --accent-colour: #c9a227;
-  --accent-colour2: #e0bc50;
-  --primary-text-colour: #0e1f40;
-  --font-logo: "Libre Baskerville", serif;
-  --font: "Montserrat", sans-serif;
-  --navbar-height: clamp(64px, 1.3vw + 59px, 80px);
-}
+@import "./global.css";
 
 html {
   scroll-behavior: smooth;
@@ -25,7 +16,7 @@ html {
 .navbar nav {
   display: flex;
   justify-content: space-between;
-  background-color: var(--bg-colour);
+  background-color: var(--white);
   padding: 0 clamp(16px, 2vw + 8px, 30px);
   align-items: center;
   height: var(--navbar-height);
@@ -50,6 +41,7 @@ html {
 
 .navlogo h1 {
   font-family: var(--font-logo);
+  color: var(--secondary);
   margin: 0;
   font-size: clamp(15px, 0.3vw + 13px, 20px);
 }
@@ -59,8 +51,8 @@ html {
   font-size: clamp(9px, 0.15vw + 8px, 12px);
   font-weight: 500;
   text-transform: uppercase;
-  color: var(--accent-colour);
-  font-family: var(--font);
+  color: var(--primary);
+  font-family: var(--font-nav);
 }
 
 .navlinks {
@@ -83,10 +75,10 @@ html {
 }
 
 .navlinks a {
-  color: var(--primary-text-colour);
+  color: var(--secondary);
   font-size: clamp(14px, 0.3vw + 12.5px, 15px);
   pointer-events: auto;
-  font-family: var(--font);
+  font-family: var(--font-nav);
   font-weight: 500;
   position: relative;
   background: none;
@@ -108,7 +100,7 @@ html {
   bottom: -7px;
   width: 100%;
   height: 2px;
-  background: var(--accent-colour);
+  background: var(--primary);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -132,12 +124,12 @@ html {
 /* Styling for get Quote Button */
 
 .quote-btn {
-  background-color: var(--accent-colour);
+  background-color: var(--primary);
   text-transform: uppercase;
   color: #000;
   border: none;
   padding: clamp(14px, 0.8vw + 10px, 18px) clamp(22px, 2vw + 14px, 36px);
-  font-family: var(--font);
+  font-family: var(--font-nav);
   font-size: clamp(15px, 0.4vw + 12px, 18px);
   font-weight: 600;
   cursor: pointer;
@@ -145,7 +137,7 @@ html {
 }
 
 .quote-btn:hover {
-  background-color: var(--accent-colour2);
+  background-color: var(--primary-light);
 }
 
 /* Hamburger Menu Toogle */
@@ -167,7 +159,7 @@ html {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: var(--primary-text-colour);
+  background-color: var(--secondary);
 }
 
 .hamburger.open span:nth-child(1) {
@@ -200,7 +192,7 @@ html {
     flex-direction: column;
     align-items: stretch;
     gap: 0;
-    background-color: var(--bg-colour);
+    background-color: var(--white);
     max-height: 0;
     overflow: hidden;
     box-shadow: 0 10px 15px rgba(14, 31, 64, 0.08);

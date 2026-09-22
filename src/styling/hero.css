@@ -6,9 +6,11 @@ body {
 
 .heroBackground {
   background-image:
-    linear-gradient(to bottom right,
+    linear-gradient(
+      to bottom right,
       rgba(0, 27, 67, 0.93),
-      rgba(12, 46, 96, 0.393)),
+      rgba(12, 46, 96, 0.393)
+    ),
     url("../assets/backgroundHero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,7 +41,7 @@ body {
 .heroTitle {
   margin: 0;
   color: rgba(255, 255, 255, 0.854);
-   font-size: clamp(48px, 4vw, 72px);
+  font-size: clamp(48px, 4vw, 72px);
 }
 
 .heroTitle span {
@@ -47,7 +49,7 @@ body {
 }
 
 .heroParagraph {
-  padding-top: 15px;;
+  padding-top: 15px;
   padding-bottom: 10px;
   margin: 0;
   color: rgba(233, 233, 233, 0.903);
@@ -66,33 +68,31 @@ body {
   text-decoration: none;
   padding: 12px 20px;
   font-size: 24px;
-   font-family: var(--font);
+  font-family: var(--font);
   font-weight: 600;
   font-size: 18px;
 
-   transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 
 .heroLinks .primaryButton {
   background-color: var(--primary);
-   color: var(--background);
-
-
+  color: var(--secondary);
 }
 
 .heroLinks .secondaryButton {
   border: 1px solid rgba(248, 249, 250, 0.843);
 }
 
-.heroLinks .primaryButton:hover{
+.heroLinks .primaryButton:hover {
   transform: translateY(-2px);
   background-color: var(--primary-light);
 }
 
-.heroLinks .secondaryButton:hover{
+.heroLinks .secondaryButton:hover {
   transform: translateY(-2px);
   border-color: var(--primary);
-  color: var(--primary)
+  color: var(--primary);
 }
 
 @media (max-width: 600px) {
