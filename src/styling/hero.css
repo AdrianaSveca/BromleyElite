@@ -6,11 +6,9 @@ body {
 
 .heroBackground {
   background-image:
-    linear-gradient(
-      to bottom right,
+    linear-gradient(to bottom right,
       rgba(0, 27, 67, 0.93),
-      rgba(12, 46, 96, 0.393)
-    ),
+      rgba(12, 46, 96, 0.393)),
     url("../assets/backgroundHero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,39 +16,87 @@ body {
   min-height: 90vh;
 
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
-.heroLogo {
-}
-.heroContent{
-  width:min(1200px, 90%);
+
+.heroContent {
+  width: min(1200px, 90%);
   margin: 0 auto;
 }
+
 .heroLogo img {
-  width: 500px;
+  width: clamp(300px, 25vw, 500px);
 }
+
 .heroInformation {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 500px;
+  max-width: 550px;
   gap: 20px;
 }
+
 .heroTitle {
   margin: 0;
-  color: white;
-  font-size: 50px;
+  color: rgba(255, 255, 255, 0.854);
+   font-size: clamp(48px, 4vw, 72px);
 }
+
 .heroTitle span {
   color: var(--primary);
 }
 
 .heroParagraph {
+  padding-top: 15px;;
+  padding-bottom: 10px;
   margin: 0;
-    color: rgba(233, 233, 233, 0.903);
-    font-size: 20px;
+  color: rgba(233, 233, 233, 0.903);
+  font-size: clamp(22px, 1.3vw, 24px);
+  font-family: var(--font);
+  max-width: 450px;
 }
+
 .heroLinks {
-  display:flex;
-  gap:15px;
+  display: flex;
+  gap: 15px;
+}
+
+.heroLinks a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 24px;
+   font-family: var(--font);
+  font-weight: 600;
+  font-size: 18px;
+
+   transition: 0.2s ease;
+}
+
+.heroLinks .primaryButton {
+  background-color: var(--primary);
+   color: var(--background);
+
+
+}
+
+.heroLinks .secondaryButton {
+  border: 1px solid rgba(248, 249, 250, 0.843);
+}
+
+.heroLinks .primaryButton:hover{
+  transform: translateY(-2px);
+  background-color: var(--primary-light);
+}
+
+.heroLinks .secondaryButton:hover{
+  transform: translateY(-2px);
+  border-color: var(--primary);
+  color: var(--primary)
+}
+
+@media (max-width: 600px) {
+  .heroLinks {
+    flex-direction: column;
+  }
 }
