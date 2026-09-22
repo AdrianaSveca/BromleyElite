@@ -1,7 +1,8 @@
 import { useState } from 'react'
 
-import Nav from "./Sections/Nav.jsx";
 import './App.css'
+
+import Nav from "./components/Nav.jsx";
 import Hero from './components/Hero.jsx'
 
 function App() {

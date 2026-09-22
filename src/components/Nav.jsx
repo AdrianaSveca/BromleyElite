@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './nav.css';
+import '../styling/nav.css';
 import logo from '../assets/BromleyElite.png';
 
 function Nav() {
