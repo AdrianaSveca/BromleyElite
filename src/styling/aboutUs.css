@@ -1,0 +1,108 @@
+.aboutUs {
+  display: flex;
+  padding: 100px 60px;
+  flex-direction: row;
+  gap:100px;
+
+
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.aboutUsButton a {
+  margin: 20px;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 22px;
+  font-family: var(--font);
+  font-weight: 600;
+
+  transition: 0.2s ease;
+
+}
+
+.aboutUsButton .aboutUsLink {
+  background-color: var(--primary);
+  color: var(--background);
+
+}
+
+.aboutUsButton .aboutUsLink:hover {
+  transform: translateY(-2px);
+  background-color: var(--primary-light);
+
+}
+
+.aboutUsInformation {
+  display:flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 25px;
+}
+
+.aboutUsH4 {
+  font-size:25px;
+  color: var(--primary);
+
+}
+
+.aboutUsH1 {
+  font-size: 45px;
+  color: var(--background);
+
+}
+
+.aboutUsInformationParagraph {
+  color: rgb(77, 77, 77);
+  font-family: var(--font);
+  font-size: 24px;
+
+}
+.aboutUsImage img {
+   width: clamp(500px, 25vw, 800px);
+}
+.aboutUsList {
+  list-style: none;
+  padding:0;
+}
+
+.aboutUsList li {
+  margin-bottom: 12px;
+  font-family: var(--font);
+  font-size: 18px;
+}
+
+.aboutUsList li::before {
+  content: "✓";
+  color: var(--primary);
+  margin-right: 10px;
+  font-weight: bold;
+}
+.aboutUsRight {
+  display: flex;
+  flex-direction: column;
+}
+.aboutUsStats {
+  background-color: #f8f6f2;
+  display: flex;
+}
+
+.stat {
+  flex: 1;
+  text-align: center;
+  padding: 20px 10px;
+  border: 1px solid #dddddd;
+}
+.stat h3{
+  color: var(--background);
+  font-size: 24px;
+
+}
+.stat p{
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 16px;
+  font-family: var(--font);
+}
