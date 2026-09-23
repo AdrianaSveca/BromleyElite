@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 :root {
-  --primary: #E9A916;
-  --primary-light: #F5C84C;
-  --background: rgb(7, 28, 59);
-  --background-light: #0D2B55;
-  --text: #F4F2EC;
-  --text-muted: #C8C8C8;
+  --primary: #e9a916;
+  --primary-light: #f5c84c;
+  --secondary: #071c3b;
+  --secondary-light: #0d2b55;
+  --white: #f4f2ec;
+  --white-muted: #c8c8c8;
+
+  --font-logo: "Libre Baskerville", serif;
+  --font-nav: "Montserrat", sans-serif;
+  --navbar-height: clamp(64px, 1.3vw + 59px, 80px);
 
   --font: "DM Sans", sans-serif;
 }
