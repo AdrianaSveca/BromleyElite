@@ -1,0 +1,105 @@
+.whyChooseUs {
+  background-color: var(--background);
+  padding: 70px 10%;
+  color: var(--text);
+}
+
+.chooseUsTitle {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.chooseUsTitle h5 {
+  color: var(--primary);
+  font-family: var(--font);
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.chooseUsTitle h1 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 36px;
+  margin: 0;
+}
+
+
+.whyChooseCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cardIcon img {
+  filter: invert(1);
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+
+.whyChooseCard {
+  border: 1px solid rgba(233, 169, 22, 0.3);
+  padding: 30px;
+  min-height: 180px;
+
+  transition: 0.2s ease;
+}
+
+.whyChooseCard:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary);
+}
+
+
+.whyChooseCard h3 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 18px;
+  margin: 20px 0 10px;
+}
+
+.whyChooseCard p {
+  font-family: var(--font);
+  color: var(--text-muted);
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+
+.cardIcon {
+  width: 42px;
+  height: 42px;
+
+  border: 1px solid var(--primary);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--primary);
+}
+
+
+@media (max-width: 900px) {
+  .whyChooseCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .whyChooseUs {
+    padding: 50px 5%;
+  }
+
+  .whyChooseCards {
+    grid-template-columns: 1fr;
+  }
+
+  .chooseUsTitle h1 {
+    font-size: 28px;
+  }
+}
