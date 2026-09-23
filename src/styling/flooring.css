@@ -1,0 +1,28 @@
+.flooring {
+  background-color: var(--white);
+  padding: 100px;
+}
+
+.flooringHeading {
+  text-align: center;
+  font-family: var(--font-nav);
+  color: var(--primary);
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.flooringSubHeading {
+  text-align: center;
+  font-family: var(--font-logo);
+  color: var(--secondary);
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.flooringLine {
+  margin: 0 auto;
+  display: block;
+  width: 5%;
+  height: 3px;
+  background-color: var(--primary-light);
+}
