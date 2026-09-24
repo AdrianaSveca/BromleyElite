@@ -26,3 +26,80 @@
   height: 3px;
   background-color: var(--primary-light);
 }
+
+.flooringDesc {
+
+  text-align: center;
+  font-family: var(--font-logo);
+  color: var(--secondary);
+  font-weight: 600;
+  letter-spacing: 2px;
+  opacity: 0.5;
+
+}
+
+.flooringCardContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding:20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.flooringCard{
+  background: var(--superior-white);
+  box-shadow: 2px 2px 2px var(--secondary);
+  transition: 0.5s;
+  padding: 10px;
+}
+.flooringCard:hover{
+  transform: translateY(-3px)
+}
+
+.cardImage{
+
+  max-width: 40px;
+  max-height: 40px;
+  
+}
+
+/* ----------- Button Animations -----------*/
+.flooringButton {
+  pointer-events: auto;
+  position: relative;
+  background: none;
+  border: 0;
+  padding: 0;
+  text-transform: inherit;
+  color: inherit;
+  cursor: pointer;
+  opacity: 0.72;
+  transition:
+    opacity 0.35s ease,
+    letter-spacing 0.35s ease;
+}
+
+.flooringButton::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  width: 100%;
+  height: 2px;
+  background: var(--primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.flooringButton:hover,
+.flooringButton:focus-visible {
+  opacity: 1;
+  outline: none;
+}
+
+.flooringButton:hover::after,
+.flooringButton:focus-visible::after {
+  transform: scaleX(1);
+}

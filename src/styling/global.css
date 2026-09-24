@@ -9,6 +9,8 @@
   --white: #f4f2ec;
   --white-muted: #c8c8c8;
 
+  --superior-white: #ffffff;
+
   --font-logo: "Libre Baskerville", serif;
   --font-nav: "Montserrat", sans-serif;
   --navbar-height: clamp(64px, 1.3vw + 59px, 80px);

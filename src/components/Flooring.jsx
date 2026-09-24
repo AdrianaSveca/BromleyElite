@@ -13,9 +13,9 @@ import wooden from '../assets/flooringCards/Wooden.jpg'
 function Flooring() {
 
     const flooringCards = [
-      {image: carpet, heading: "Carpet", description: "xyz"},
-      {image: laminate, heading: "Carpet", description: "xyz"},
-      {image: wooden, heading: "Carpet", description: "xyz"},
+      {image: carpet, heading: "Carpet", description: "Soft, warm and available in hundreds of styles — from plush bedroom carpets to durable family-friendly options."},
+      {image: laminate, heading: "Laminate", description: "Waterproof, hardwearing and beautifully realistic. LVT is perfect for kitchens, bathrooms and busy living areas."},
+      {image: wooden, heading: "Wooden", description: "Practical, comfortable underfoot and available in sheet or tile format. An affordable solution for any room."},
     ]
   return (
     <div className = "flooring">
@@ -23,11 +23,15 @@ function Flooring() {
         <h1 className = "flooringSubHeading">Flooring for every home</h1>
         <span className = "flooringLine"></span>
         <p className = "flooringDesc">We supply and fit a wide range of flooring types to suit every home, budget and lifestyle.</p>
-        <div class = "flooringCards">
+        <div className = "flooringCardContainer">
+          <div class = "flooringCards">
             {flooringCards.map((card)=>(
                 <FlooringCard image={card.image} heading={card.heading} description={card.description} />
             ))}
+            
+          </div>
         </div>
+        
     </div>
   );
 }
