@@ -1,0 +1,83 @@
+.contactUs {
+  padding: 80px 5%;
+}
+
+.contactUsTitle {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contactUsTitle h5 {
+  margin-bottom: 10px;
+}
+
+.contactUsTitle h1 {
+  margin: 0;
+}
+
+.contactUsInformation {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.contactUsLinks {
+  width: 50%;
+}
+
+.contactUsLink {
+  margin-bottom: 10px;
+}
+
+.contactUsLink h5 {
+  margin-bottom: 5px;
+}
+
+.contactUsLink a {
+  text-decoration: none;
+}
+
+.contactUsHours {
+  margin-top: 30px;
+}
+
+.contactUsForm {
+  width: 50%;
+}
+
+.contactUsForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contactUsForm input,
+.contactUsForm select,
+.contactUsForm textarea {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.contactUsForm textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contactUsForm button {
+  padding: 14px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .contactUsInformation {
+    flex-direction: column;
+  }
+
+  .contactUsLinks,
+  .contactUsForm {
+    width: 100%;
+  }
+}
