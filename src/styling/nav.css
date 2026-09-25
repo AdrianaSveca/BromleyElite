@@ -16,7 +16,7 @@ html {
 .navbar nav {
   display: flex;
   justify-content: space-between;
-  background-color: var(--white);
+  background-color: var(--superior-white);
   padding: 0 clamp(16px, 2vw + 8px, 30px);
   align-items: center;
   height: var(--navbar-height);
