@@ -41,36 +41,37 @@ function ContactUs() {
           </div>
           <div className="contactUsForm">
             <form>
-              <label htmlFor="name">Full Name</label>
-              <br></br>
-              <input type="text" id="name" name="name"></input>
-              <br></br>
-              <label htmlFor="phoneNumber">Phone Number</label>
-              <br></br>
-              <input
-                type="tel"
-                id="phoneNumber"
-                name="phoneNumber"
-              ></input>
-              <br></br>
+              <div className="formRow">
+                <div className="formGroup">
+                  <label>FULL NAME *</label>
+                  <input type="text" placeholder="Your name" />
+                </div>
 
+                <div className="formGroup">
+                  <label>PHONE NUMBER *</label>
+                  <input type="tel" placeholder="Your phone number" />
+                </div>
+              </div>
               <label htmlFor="email">Email</label>
-              <br></br>
+             
               <input type="email" id="email" name="email"></input>
-              <br></br>
+             
 
-              <label for="flooring">Type Of Flooring</label><br></br>
+              <label for="flooring">Type Of Flooring</label>
               <select name="flooring" id="flooring">
-                <option value="selectFlooringType">Select Flooring Type </option>
+                <option value="selectFlooringType">
+                  Select Flooring Type{" "}
+                </option>
                 <option value="carpet">Carpet </option>
                 <option value="luxuryVinylTile">Luxury Vinyl Tile</option>
                 <option value="laminateFlooring">Laminate Flooring</option>
                 <option value="vinylFlooring">Vinyl Flooring</option>
                 <option value="notSureYet">Not Sure Yet</option>
-              </select><br></br>
+              </select>
+             
 
               <label for="message">Message</label>
-              <br></br>
+              
               <textarea id="message" name="message"></textarea>
 
               <button type="submit">Get a Free Quote</button>
