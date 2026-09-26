@@ -1,0 +1,210 @@
+.contactUs {
+  padding: 80px 5%;
+  background-color: #f7f5f1;
+}
+
+.contactUsTitle {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contactUsTitle h5 {
+  color: var(--primary);
+  letter-spacing: 2px;
+  margin: 0 0 12px;
+}
+
+.contactUsTitle h1 {
+  color: var(--secondary-light);
+  margin: 0;
+}
+
+.contactUsInformation {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 70px;
+
+  color: var(--secondary-light);
+  font-family: var(--font);
+
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.contactUsLinks {
+  width: 40%;
+}
+
+.contactUsLinks h3 {
+  font-family: var(--font-logo);
+  font-size: 28px;
+  margin: 0 0 40px;
+  color: var(--secondary-light);
+}
+
+.contactUsLink {
+  margin-bottom: 30px;
+}
+
+.contactUsLink h5 {
+  margin: 0 0 7px;
+
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: var(--secondary-light);
+}
+
+.contactUsLink p,
+.contactUsLink a {
+  margin: 0;
+
+  font-size: 17px;
+  line-height: 1.6;
+
+  color: #444;
+  text-decoration: none;
+}
+
+.contactUsLink a {
+  color: var(--primary);
+}
+
+.contactUsHours {
+  margin-top: 40px;
+
+  background-color: white;
+  border-left: 3px solid var(--primary);
+
+  padding: 25px 30px;
+}
+
+.contactUsHours h5 {
+  margin: 0 0 12px;
+  letter-spacing: 2px;
+}
+
+.contactUsHours p {
+  margin: 0;
+}
+
+.contactUsForm {
+  background-color: white;
+
+  padding: 50px;
+  width: 55%;
+
+  box-sizing: border-box;
+}
+.formRow {
+  display: flex;
+  gap: 25px;
+}
+
+.formGroup {
+  flex: 1;
+}
+
+.contactUsForm h2 {
+  font-family: var(--font-logo);
+  color: var(--secondary-light);
+
+  font-size: 27px;
+  margin: 0 0 40px;
+}
+
+.contactUsForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contactUsForm label {
+  display: block;
+
+  margin-bottom: 1px;
+
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  color: var(--secondary-light);
+}
+
+.contactUsForm input,
+.contactUsForm select,
+.contactUsForm textarea {
+  width: 100%;
+
+  padding: 10px 18px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d7d1c8;
+  background-color: white;
+
+  font-family: var(--font);
+  font-size: 16px;
+
+  outline: none;
+}
+
+.contactUsForm input:focus,
+.contactUsForm select:focus,
+.contactUsForm textarea:focus {
+  border-color: var(--primary);
+}
+
+.contactUsForm textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contactUsForm button {
+  width: 100%;
+
+  padding: 17px 20px;
+
+  border: none;
+  background-color: var(--primary);
+
+  color: var(--secondary-light);
+
+  font-family: var(--font);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.contactUsForm button:hover {
+  background-color: var(--primary-light);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .contactUs {
+    padding: 60px 5%;
+  }
+
+  .contactUsInformation {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .contactUsLinks,
+  .contactUsForm {
+    width: 100%;
+  }
+
+  .contactUsForm {
+    padding: 30px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .formRow {
+    flex-direction: column;
+  }
+}
