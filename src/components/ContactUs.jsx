@@ -3,7 +3,7 @@ import "../styling/contactUs.css";
 function ContactUs() {
   return (
     <>
-      <div className="contactUs">
+      <div className="contactUs" id ="contact">
         <div className="contactUsTitle">
           <h5>GET IN TOUCH</h5>
           <h1>Contact Us</h1>
