@@ -16,7 +16,7 @@ function ContactUs() {
             <div className="contactUsLink"></div>
             <div className="contactUsLink">
               <h5>PHONE</h5>
-              <a href=""></a>
+              <a href="07478 312439">07478 312439</a>
             </div>
 
             <div className="contactUsLink">
@@ -25,7 +25,9 @@ function ContactUs() {
             </div>
             <div className="contactUsLink">
               <h5>FACEBOOK</h5>
-              <a href=""></a>
+              <a href="https://www.facebook.com/sbscarpetandflooring">
+                Bromley Elite Carpet & Flooring
+              </a>
             </div>
             <div className="contactUsLink">
               <h5>SERVICE AREA</h5>
@@ -36,7 +38,11 @@ function ContactUs() {
             </div>
 
             <div className="contactUsHours">
-              <ul></ul>
+              <ul>
+                <li>Monday – Friday: 8:00 AM – 5:00 PM</li>
+                <li>Saturday: 9:00 AM – 4:00 PM</li>
+                <li>Sunday: Closed</li>
+              </ul>
             </div>
           </div>
           <div className="contactUsForm">
@@ -53,9 +59,8 @@ function ContactUs() {
                 </div>
               </div>
               <label htmlFor="email">Email</label>
-             
+
               <input type="email" id="email" name="email"></input>
-             
 
               <label for="flooring">Type Of Flooring</label>
               <select name="flooring" id="flooring">
@@ -68,10 +73,9 @@ function ContactUs() {
                 <option value="vinylFlooring">Vinyl Flooring</option>
                 <option value="notSureYet">Not Sure Yet</option>
               </select>
-             
 
               <label for="message">Message</label>
-              
+
               <textarea id="message" name="message"></textarea>
 
               <button type="submit">Get a Free Quote</button>
