@@ -6,6 +6,7 @@ import Nav from "./components/Nav.jsx";
 import Hero from './components/Hero.jsx';
 import Flooring from './components/Flooring.jsx';
 import AboutUs from './components/AboutUs.jsx'
+import Reviews from './components/Reviews.jsx'
 import WhyChooseUs from './components/WhyChooseUs.jsx';
 import ContactUs from './components/ContactUs.jsx';
 import Footer from './components/Footer.jsx';
@@ -18,6 +19,7 @@ function App() {
       <Flooring />
       <AboutUs/>
       <WhyChooseUs/>
+      <Reviews />
       <ContactUs/>
       <Footer />
     </>
