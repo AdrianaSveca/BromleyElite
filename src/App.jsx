@@ -7,6 +7,7 @@ import Hero from './components/Hero.jsx';
 import Flooring from './components/Flooring.jsx';
 import AboutUs from './components/AboutUs.jsx'
 import WhyChooseUs from './components/WhyChooseUs.jsx';
+import Footer from './components/Footer.jsx';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Flooring />
       <AboutUs/>
       <WhyChooseUs/>
+      <Footer />
     </>
   )
 }
