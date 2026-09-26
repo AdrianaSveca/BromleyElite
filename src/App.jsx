@@ -8,6 +8,7 @@ import Flooring from './components/Flooring.jsx';
 import AboutUs from './components/AboutUs.jsx'
 import WhyChooseUs from './components/WhyChooseUs.jsx';
 import ContactUs from './components/ContactUs.jsx';
+import Footer from './components/Footer.jsx';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <AboutUs/>
       <WhyChooseUs/>
       <ContactUs/>
+      <Footer />
     </>
   )
 }
