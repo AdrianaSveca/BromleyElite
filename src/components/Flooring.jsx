@@ -18,7 +18,7 @@ function Flooring() {
       {image: wooden, title: "wooden", heading: "Wooden", description: "Practical, comfortable underfoot and available in sheet or tile format. An affordable solution for any room."},
     ]
   return (
-    <div className = "flooring">
+    <div className = "flooring" id ="flooring">
         <p className = "flooringHeading">Our flooring range</p>
         <h1 className = "flooringSubHeading">Flooring for every home</h1>
         <span className = "flooringLine"></span>

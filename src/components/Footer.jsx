@@ -27,10 +27,9 @@ function Footer() {
           <h4 className="footerTitle">Quick Links</h4>
           <ul className="footerQuickLinksList">
             <li><a href="/#hero">Home</a></li>
-            <li><a href="/#about">About</a></li>
-            <li><a href="/#menu">Flooring</a></li>
-            <li><a href="/#menu">Our Work</a></li>
-            <li><a href="/#menu">Reviews</a></li>
+            <li><a href="/#aboutUs">About</a></li>
+            <li><a href="/#flooring">Flooring</a></li>
+            <li><a href="/#reviews">Reviews</a></li>
             <li><a href="/#contact">Contact</a></li>
           </ul>
         </div>

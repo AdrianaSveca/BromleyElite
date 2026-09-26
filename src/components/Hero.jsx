@@ -3,7 +3,7 @@ import heroLogo from '../assets/heroLogo.png';
 
 function Hero() {
   return (
-    <div className="heroBackground">
+    <div className="heroBackground" id="hero">
 
       <div className="heroContent">
 
