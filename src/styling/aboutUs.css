@@ -106,3 +106,61 @@
   font-size: 16px;
   font-family: var(--font);
 }
+@media (max-width: 768px) {
+
+  .aboutUs {
+    flex-direction: column;
+    padding: 60px 25px;
+    gap: 40px;
+  }
+
+  .aboutUsInformation {
+    width: 100%;
+    gap: 18px;
+  }
+
+  .aboutUsH4 {
+    font-size: 20px;
+  }
+
+  .aboutUsH1 {
+    font-size: 34px;
+  }
+
+  .aboutUsInformationParagraph {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .aboutUsImage img {
+    width: 100%;
+    height: auto;
+  }
+
+  .aboutUsList li {
+    font-size: 16px;
+  }
+
+  .aboutUsButton a {
+    margin: 0;
+    font-size: 18px;
+    display: inline-block;
+  }
+
+  .aboutUsStats {
+    width: 100%;
+  }
+
+  .stat {
+    padding: 15px 5px;
+  }
+
+  .stat h3 {
+    font-size: 20px;
+  }
+
+  .stat p {
+    font-size: 13px;
+  }
+}
+
