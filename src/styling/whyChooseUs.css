@@ -1,7 +1,7 @@
 .whyChooseUs {
-  background-color: var(--background);
+  background-color: var(--secondary);
   padding: 70px 10%;
-  color: var(--text);
+  color: var(--white);
 }
 
 .chooseUsTitle {
