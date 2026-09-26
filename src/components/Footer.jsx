@@ -20,7 +20,7 @@ function Footer() {
             fitting quality carpets and flooring across Bromley and the surrounding areas.
           </p>
           
-          <a href="https://facebook.com"> Follow us on Facebook</a>
+          <a href="https://www.facebook.com/scott.bromley.7"> Follow us on Facebook</a>
         </div>
 
         <div className="footerQuickLinks">
@@ -39,11 +39,9 @@ function Footer() {
           <h4 className="footerTitle">Contact</h4>
           <ul className="footerContactList">
             <li>
-             
-              <span>447478312439</span>
+              <span>+447478312439</span>
             </li>
             <li>
-             
               <span>Bromley & Surrounding Areas, London</span>
             </li>
           </ul>
