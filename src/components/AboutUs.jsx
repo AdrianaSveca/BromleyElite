@@ -5,7 +5,7 @@ import image from '../assets/ScottReplacementImage.png'
 function AboutUs() {
   return (
     <>
-      <div className="aboutUs">
+      <div className="aboutUs" id="aboutUs">
         <div className="aboutUsInformation">
           <div className="titleInformation">
             <h4 className="aboutUsH4">ABOUT US</h4>
