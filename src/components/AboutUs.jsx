@@ -25,7 +25,7 @@ function AboutUs() {
             <li>Friendly, honest advice for your home</li>
           </ul>
           <div className="aboutUsButton">
-            <a href="" className="aboutUsLink">Get a Free Quote</a>
+            <a href="/#contact" className="aboutUsLink">Get a Free Quote</a>
           </div>
 
 

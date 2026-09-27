@@ -23,8 +23,8 @@ function Hero() {
           </p>
 
           <div className="heroLinks">
-            <a href="" className="primaryButton">View Our Flooring</a>
-            <a href="" className="secondaryButton">Get a Free Quote</a>
+            <a href="/#flooring" className="primaryButton">View Our Flooring</a>
+            <a href="/#contact" className="secondaryButton">Get a Free Quote</a>
           </div>
         </div>
 
