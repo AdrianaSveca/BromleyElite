@@ -35,7 +35,9 @@ function Nav() {
             <li><a href="/#aboutUs" onClick={closeMenu}>About</a></li>
             <li><a href="/#reviews" onClick={closeMenu}>Reviews</a></li>
             <li><a href="/#contact" onClick={closeMenu}>Contact</a></li>
-            <li><button className="quote-btn" onClick={closeMenu}>Get a free quote</button></li>
+            <li>
+              <div className ="freeQuote"><a className="quote-btn" href="/#contact" onClick={closeMenu}>Get a free quote</a></div>
+            </li>
           </ul>
         </div>
       </nav>

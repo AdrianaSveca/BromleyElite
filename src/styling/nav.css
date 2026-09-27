@@ -123,7 +123,7 @@ html {
 
 /* Styling for get Quote Button */
 
-.quote-btn {
+.freeQuote {
   background-color: var(--primary);
   text-transform: uppercase;
   color: #000;
@@ -136,7 +136,7 @@ html {
   transition: background-color 0.3s ease;
 }
 
-.quote-btn:hover {
+.freeQuote:hover {
   background-color: var(--primary-light);
 }
 
