@@ -31,8 +31,8 @@ function Nav() {
         <div className="navlinks">
           <ul className={menuOpen ? 'open' : ''}>
             <li><a href="/#hero" onClick={closeMenu}>Home</a></li>
-            <li><a href="/#aboutUs" onClick={closeMenu}>About</a></li>
             <li><a href="/#flooring" onClick={closeMenu}>Flooring</a></li>
+            <li><a href="/#aboutUs" onClick={closeMenu}>About</a></li>
             <li><a href="/#reviews" onClick={closeMenu}>Reviews</a></li>
             <li><a href="/#contact" onClick={closeMenu}>Contact</a></li>
             <li><button className="quote-btn" onClick={closeMenu}>Get a free quote</button></li>
