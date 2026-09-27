@@ -11,7 +11,7 @@ function FlooringCard(props) {
             </div>
             <h2 className="flooringCardHeading">{props.heading}</h2>
             <p className="flooringCardDescription">{props.description}</p>
-            <button className="flooringButton">Enqire →</button>
+            <a href="/#contact" className="flooringButton">Enqire →</a>
         </div>
     );
 }
