@@ -10,6 +10,8 @@ import Reviews from './components/Reviews.jsx'
 import WhyChooseUs from './components/WhyChooseUs.jsx';
 import ContactUs from './components/ContactUs.jsx';
 import Footer from './components/Footer.jsx';
+import Calculator from './components/Calculator.jsx';
+import CalcButton from './components/CalcButton.jsx';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
       <WhyChooseUs/>
       <Reviews />
       <ContactUs/>
+      <Calculator />
+      <CalcButton />
       <Footer />
     </>
   )
