@@ -12,6 +12,16 @@ function closeModal() {
   document.getElementById('modalContainer').classList.remove('show');
 }
 
+modalContainer.addEventListener("click", (e) => {
+  if (e.target === modalContainer) closeModal();
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && modalContainer.classList.contains("show")) {
+    closeModal();
+  }
+});
+
 function Calculator() {
   return (
     <div className="modalContainer" id="modalContainer">
