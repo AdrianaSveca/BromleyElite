@@ -42,17 +42,22 @@ app.get("/api/flooring", (req, res) => {
   }
 });
 
-app.get("/api/admin", (req, res) => {
-  try {
-    const admin = db
-      .prepare("SELECT * FROM admin ORDER BY created_at DESC")
-      .all();
+app.post("/api/admin/login", (req, res) => {
+const { username, password } = req.body;
 
-    res.json(admin);
-  } catch (error) {
-    console.error("Error fetching admin:", error);
-    res.status(500).json({ error: "Failed to fetch admin" });
-  }
+if (!username || !password) {
+  return res.status(400).json({ error: "Username and password are required" });
+}
+const admin = db.prepare("SELECT * FROM admin WHERE username = ?").get(username);
+
+if (!admin) {
+  return res.status(401).json({
+    error: "Invalid username or password"
+  });
+}
+
+bcrypt.compare(password, admin.password_hash, (err, result) => {
+
 });
 
 app.listen(PORT, () => {
