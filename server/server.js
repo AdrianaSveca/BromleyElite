@@ -1,11 +1,26 @@
 const express = require("express");
 require("dotenv").config();
 const db = require("./database");
+const session = require("express-session");
+const bcrypt = require("bcrypt");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
+app.use(
+  session({
+    secret: process.env.SESSION_SECRET,
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+      httpOnly: true,
+      secure: false,
+      sameSite: "lax",
+      maxAge: 1000 * 60 * 60
+    }
+  })
+);
 
 app.get("/api/health", (req, res) => {
   res.json({

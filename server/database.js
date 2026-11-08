@@ -21,13 +21,28 @@ db.exec(`
 `);
 
 db.exec(`
-  CREATE TABLE IF NOT EXISTS admin (
+   CREATE TABLE IF NOT EXISTS admin (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username TEXT NOT NULL UNIQUE,
     password_hash TEXT NOT NULL,
     created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
   );
 `);
 
+const adminColumns = db.prepare("PRAGMA table_info(admin)").all();
+
+const hasUsername = adminColumns.some(
+  (column) => column.name === "username"
+);
+
+if (!hasUsername) {
+  db.exec("ALTER TABLE admin ADD COLUMN username TEXT");
+}
+
 console.log("SQLite database connected successfully.");
+
+console.log(
+  db.prepare("PRAGMA table_info(admin)").all()
+);
 
 module.exports = db;
